@@ -1,6 +1,8 @@
 // pages/api/chat.ts
+
 import type { NextApiRequest, NextApiResponse } from 'next';
 import OpenAI from 'openai';
+console.log("OPENAI_API_KEY:", process.env.OPENAI_API_KEY);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
