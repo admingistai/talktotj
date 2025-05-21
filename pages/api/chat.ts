@@ -34,8 +34,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const reply = completion.choices[0].message?.content?.trim();
     res.status(200).json({ response: reply });
-  } catch (error: any) {
+  } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'OpenAI API error', details: error.message });
+    res.status(500).json({
+      error: 'OpenAI API error',
+      details: (error as Error).message,
+    });
   }
 }
