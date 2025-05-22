@@ -58,7 +58,7 @@ export default function Home() {
           </header>
 
           <div
-            className="flex-1 overflow-y-auto px-6 py-4 space-y-4 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-8 before:bg-gradient-to-b before:from-[#2a2a2d] before:to-transparent after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-8 after:bg-gradient-to-t after:from-[#2a2a2d] after:to-transparent"
+            className="flex-1 overflow-y-auto overscroll-y-none px-6 py-4 space-y-4 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-8 before:bg-gradient-to-b before:from-[#2a2a2d] before:to-transparent after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-8 after:bg-gradient-to-t after:from-[#2a2a2d] after:to-transparent"
           >
             {messages.map((msg, i) => (
               <div
