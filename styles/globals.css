@@ -1,4 +1,11 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";   /* resets & base styles */
+@import "tailwindcss/utilities";    /* ALL of Tailwind’s utility classes */
+
+
+html, body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
 
 :root {
   --background: #ffffff;
